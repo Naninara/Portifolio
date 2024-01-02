@@ -58,7 +58,7 @@ function Contact() {
           })}
         </div>
       </div>
-      <div className="w-full flex flex-col p-2 gap-2 justify-center md:w-1/2 md:px-[20px]">
+      <div className="w-full flex flex-col p-2 gap-2 justify-center md:w-1/2 md:px-[80px]">
         <h1 className="text-[45px] font-[800] font-sora">
           Let's Talk for <br /> Something Special
         </h1>
