@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import profile from "../Assets/Profile.png";
+import Profile from "../Assets/Profile.png";
 function HeroSection() {
   const SocialLinks = [
     {
@@ -55,7 +55,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center md:w-1/2">
-        <img src={profile} alt="profile" />
+        <img src={Profile} alt="profile" />
       </div>
     </div>
   );
