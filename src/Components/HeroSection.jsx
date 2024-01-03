@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import profile from "../Assets/profile.png";
+import profile from "../Assets/Profile.png";
 function HeroSection() {
   const SocialLinks = [
     {
@@ -22,42 +22,29 @@ function HeroSection() {
     },
   ];
   return (
-    <div className="p-0 flex flex-col-reverse  items-center flex-wrap justify-center md:flex-row md:px-[80px] md:py-[60px] ">
-      {" "}
-      <div className="flex flex-col py-[20px] w-[600px] gap-[30px]">
-        <div className="flex flex-col font-sora text-[48px] gap-[16px]">
-          {" "}
-          <div className="flex text-[28px] font-sora  gap-[16px] md:text-[48px]">
-            <h1 className=" font-normal ">Hello I'am </h1>
-            <h1 className="font-extrabold">Mavin Nara</h1>
-          </div>
-          <div className="flex text-[28px] font-sora  gap-[16px] md:text-[48px]">
-            <h1 className="font-extrabold">Full Stack</h1>
-            <h1
-              className=" font-normal text-white"
-              style={{
-                textShadow:
-                  " 3px 3px 2px #000, -3px 3px 2px #000, -3px -3px 0 #000,3px -3px 0 #000",
-              }}
-            >
-              Developer{" "}
-            </h1>
-          </div>
+    <div className="w-full h-auto flex flex-col-reverse md:flex-row">
+      <div className="w-full flex items-center p-4 md:p-20 flex-col gap-6 md:w-1/2">
+        <div>
+          <h1 className=" text-[27px] md:text-[48px] font-sora">
+            Hello i'm <span className="font-[800]">Mavin Nara</span>
+          </h1>
+          <h1 className=" text-[27px] md:text-[48px] font-sora">
+            <span className="font-[800]">Full Stack</span> Developer
+          </h1>
         </div>
-
-        <div className="flex flex-wrap">
+        <div className="w-auto text-justify  md:px-0">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-            ipsum? Repellat, harum amet. Laudantium eveniet ex quae esse
-            asperiores repellendus minus! Deserunt, odio voluptatibus saepe cum
-            illo neque perspiciatis quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            nostrum tempore dolore, pariatur fugit ullam dolorem ad illum totam,
+            distinctio possimus iste ea voluptatem quaerat necessitatibus fuga
+            nisi quidem saepe.
           </p>
         </div>
-        <div className="flex gap-[30px]">
+        <div className="flex gap-4 md:gap-[30px]">
           {SocialLinks.map((ele) => {
             return (
               <a href={ele.link} target={"_blank"} rel="noreferrer">
-                <div className="group w-[56px] h-[56px] flex items-center justify-center   border-black border-2 p-[16px] hover:bg-black duration-300 cursor-pointer">
+                <div className="group w-auto h-auto flex items-center justify-center   border-black border-2 p-[16px] hover:bg-black duration-300 cursor-pointer">
                   <span className="text-black group-hover:text-white">
                     {ele.icon}
                   </span>
@@ -67,7 +54,7 @@ function HeroSection() {
           })}
         </div>
       </div>
-      <div className="w-[320px] h-[450px] flex items-center ">
+      <div className="w-full flex items-center justify-center md:w-1/2">
         <img src={profile} alt="profile" />
       </div>
     </div>

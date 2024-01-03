@@ -33,13 +33,21 @@ const SocialLinks = [
     icon: <FaGithub size={40} />,
     link: "https://github.com/naninara",
   },
+  {
+    icon: <FaLinkedin size={40} />,
+    link: "https://www.linkedin.com/in/mavinnara",
+  },
+  {
+    icon: <FaGithub size={40} />,
+    link: "https://github.com/naninara",
+  },
 ];
 function Skills() {
   return (
     <div className="p-0 flex flex-col md:py-[60px] md:px-[80px] ">
-      <div className="px-[13px] flex flex-col md:px-[32px] gap-[40px]">
+      <div className=" flex flex-col md:px-[32px] gap-[40px]">
         <h1 className="font-sora text-[48px] text-center">My Skills</h1>
-        <div className="flex flex-wrap justify-between gap-10">
+        <div className="flex flex-wrap justify-center w-full gap-10 md:gap-32">
           {SocialLinks.map((ele) => {
             return (
               <a href={ele.link} target={"_blank"} rel="noreferrer">
