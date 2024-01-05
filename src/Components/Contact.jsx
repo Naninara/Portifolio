@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const SocialLinks = [
   {
@@ -11,12 +11,8 @@ const SocialLinks = [
     link: "https://github.com/naninara",
   },
   {
-    icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/in/mavinnara",
-  },
-  {
-    icon: <FaGithub />,
-    link: "https://github.com/naninara",
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/_.mavin__/",
   },
 ];
 function Contact() {
@@ -69,11 +65,22 @@ function Contact() {
           </p>
         </div>
         <div>
-          <h1 className="text-[20px] md:text-[28px] font-[600] font-sora">
+          <h1
+            className="text-[20px] md:text-[28px] font-[600] font-sora cursor-pointer"
+            onClick={() => {
+              window.location.href = "mail:nmvmanikanta@gmail.com";
+            }}
+          >
             Mavinnara031@gmail.com
           </h1>
         </div>
-        <h1 className="text-[20px] md:text-[28px] font-[600] font-sora">
+
+        <h1
+          className="text-[20px] md:text-[28px] font-[600] font-sora cursor-pointer"
+          onClick={() => {
+            window.location.href = "tel:+918074187798";
+          }}
+        >
           9618634914
         </h1>
       </div>

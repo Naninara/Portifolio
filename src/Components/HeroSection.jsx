@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 
 function HeroSection() {
   const SocialLinks = [
@@ -13,12 +14,12 @@ function HeroSection() {
       link: "https://github.com/naninara",
     },
     {
-      icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/mavinnara",
+      icon: <SiLeetcode />,
+      link: "https://leetcode.com/nmvmanikanta/",
     },
     {
-      icon: <FaGithub />,
-      link: "https://github.com/naninara",
+      icon: <SiGeeksforgeeks />,
+      link: "https://auth.geeksforgeeks.org/user/nmvmanikanta/",
     },
   ];
   return (
@@ -34,16 +35,21 @@ function HeroSection() {
         </div>
         <div className="w-auto text-justify  md:px-0">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            nostrum tempore dolore, pariatur fugit ullam dolorem ad illum totam,
-            distinctio possimus iste ea voluptatem quaerat necessitatibus fuga
-            nisi quidem saepe.
+            This is Mavin, graduate in Mechanical Engineering from Aditya
+            Engineering College( 2024 ), with strong software programming and
+            developing skills with <b>MERN Stack </b>and <b>Java Backend</b>{" "}
+            with basic Data Structures
           </p>
         </div>
         <div className="flex gap-4 md:gap-[30px]">
           {SocialLinks.map((ele) => {
             return (
-              <a href={ele.link} target={"_blank"} rel="noreferrer">
+              <a
+                href={ele.link}
+                target={"_blank"}
+                rel="noreferrer"
+                className="hover:scale-110 duration-300"
+              >
                 <div className="group w-auto h-auto flex items-center justify-center   border-black border-2 p-[16px] hover:bg-black duration-300 cursor-pointer">
                   <span className="text-black group-hover:text-white">
                     {ele.icon}
