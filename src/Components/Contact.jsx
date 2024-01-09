@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
 const SocialLinks = [
   {
     icon: <FaLinkedin />,
@@ -21,7 +21,12 @@ function Contact() {
       className="flex flex-col-reverse p-2 md:px-[80px] md:py-[60px] md:flex-row"
       name="contact"
     >
-      <div className="w-full flex flex-col gap-5 md:w-1/2">
+      <motion.div
+        className="w-full flex flex-col gap-5 md:w-1/2"
+        initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <form className=" flex flex-col gap-8">
           <input
             placeholder="Your name"
@@ -56,17 +61,17 @@ function Contact() {
             );
           })}
         </div>
-      </div>
-      <div className="w-full flex flex-col p-2 gap-2 justify-center md:w-1/2 md:px-[80px]">
+      </motion.div>
+      <motion.div
+        className="w-full flex flex-col p-2 gap-2 justify-center md:w-1/2 md:px-[80px]"
+        initial={{ y: -100 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="text-[45px] font-[800] font-sora">
           Let's Talk for <br /> Something Special
         </h1>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos
-            accusamus eaque iure quibusdam repudianda
-          </p>
-        </div>
+
         <div>
           <h1
             className="text-[20px] md:text-[28px] font-[600] font-sora cursor-pointer"
@@ -86,7 +91,7 @@ function Contact() {
         >
           9618634914
         </h1>
-      </div>
+      </motion.div>
     </div>
   );
 }

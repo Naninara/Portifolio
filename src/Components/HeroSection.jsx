@@ -25,7 +25,7 @@ function HeroSection() {
   ];
   return (
     <div
-      className="w-full h-auto flex flex-col-reverse md:flex-row"
+      className="overflow-x-hidden w-full h-auto flex flex-col-reverse md:flex-row"
       name="home"
     >
       <motion.div

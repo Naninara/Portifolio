@@ -6,7 +6,6 @@ function Navbar() {
   return (
     <>
       <div className="flex justify-between px-[80px] py-[20px] items-center sticky top-0 z-50 bg-white">
-        {" "}
         <div>
           <h1 className=" font-sora font-[700] cursor-pointer hover:scale-110 duration-300">
             Mavin

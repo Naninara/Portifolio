@@ -1,6 +1,8 @@
 import React from "react";
 import { FaJava, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
 import {
   SiExpress,
   SiGit,
@@ -68,18 +70,31 @@ function Skills() {
       name="skills"
     >
       <div className=" flex flex-col md:px-[32px] gap-[40px]">
-        <h1 className="font-sora text-[48px] text-center">My Skills</h1>
+        <motion.h1
+          className="font-sora text-[48px] text-center"
+          initial={{ y: -50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          My Skills
+        </motion.h1>
         <div className="flex flex-wrap justify-center items-center w-full gap-[7px] md:gap-20">
           {SocialLinks.map((ele) => {
             return (
-              <div className="group  w-[120px] h-[125px] flex items-center justify-center  flex-col gap-[20px] border-black border-2  hover:bg-black duration-300 hover:scale-105 cursor-pointer">
+              <motion.div
+                layoutScroll
+                className="group  w-[120px] h-[125px] flex items-center justify-center  flex-col gap-[20px] border-black border-2  hover:bg-black duration-300 hover:scale-105 cursor-pointer"
+                initial={{ y: -50 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 0.2 }}
+              >
                 <span className="text-black group-hover:text-white">
                   {ele.icon}
                 </span>
                 <h1 className="font-sora font-bold group-hover:text-white">
                   {ele.name}
                 </h1>
-              </div>
+              </motion.div>
             );
           })}
         </div>
