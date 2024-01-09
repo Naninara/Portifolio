@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-
 function Navbar() {
   const [open, setOpen] = useState(false);
+
   return (
     <>
       <div className="flex justify-between px-[80px] py-[20px] items-center sticky top-0 z-50 bg-white">
@@ -90,20 +91,62 @@ function Navbar() {
         </div>
       </div>
       {open && (
-        <div className="flex items-center justify-center h-[100vh] z-20 fixed top-0 bg-white  w-full">
-          <ul className="flex flex-col gap-[32px] font-sora font-[700] text-[15px] items-center  ">
-            <li className="cursor-pointer hover:scale-110 duration-300">
+        <motion.div
+          className="flex items-center justify-center h-[100vh] z-20 fixed top-0 bg-white  w-full"
+          initial={{ y: -100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.ul
+            className="flex flex-col gap-[32px] font-sora font-[700] text-[15px] items-center"
+            initial={{ y: -100 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1, type: "spring", bounce: 0.65 }}
+          >
+            <Link
+              smooth
+              to="home"
+              className="cursor-pointer hover:scale-110 duration-300"
+              offset={-100}
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Home
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              smooth
+              to="skills"
+              offset={-100}
+              className="cursor-pointer hover:scale-110 duration-300"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Skills
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              smooth
+              to="projects"
+              offset={-100}
+              className="cursor-pointer hover:scale-110 duration-300"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Projects
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              smooth
+              to="contact"
+              offset={-100}
+              className="cursor-pointer hover:scale-110 duration-300"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Contact
-            </li>
+            </Link>
             <li className="cursor-pointer hover:scale-110 duration-300">
               <a href="./Resume.pdf" target="_blank" download={true}>
                 <button className="h-[56px] px-[20px] py-[16px] bg-black flex items-center justify-center text-white font-sora gap-[8px] rounded-md font-[600]">
@@ -127,8 +170,8 @@ function Navbar() {
                 </button>
               </a>
             </li>
-          </ul>
-        </div>
+          </motion.ul>
+        </motion.div>
       )}
     </>
   );
