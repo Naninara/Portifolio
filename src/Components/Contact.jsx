@@ -27,7 +27,7 @@ function Contact() {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <form className=" flex flex-col gap-8">
+        <form className="flex flex-col gap-8">
           <input
             placeholder="Your name"
             className="w-full h-[56px] flex justify-center px-5 outline-1 border-2 border-black placeholder:font-sora"
