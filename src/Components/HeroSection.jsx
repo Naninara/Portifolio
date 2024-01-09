@@ -31,7 +31,7 @@ function HeroSection() {
       <motion.div
         className="w-full flex items-center p-4 md:p-20 flex-col gap-6 md:w-1/2"
         initial={{ x: -100 }}
-        whileInView={{ x: 100 }}
+        whileInView={{ x: 0 }}
         transition={{ duration: 0.8 }}
       >
         <div>
