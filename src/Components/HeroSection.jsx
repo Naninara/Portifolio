@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   const SocialLinks = [
@@ -23,8 +24,16 @@ function HeroSection() {
     },
   ];
   return (
-    <div className="w-full h-auto flex flex-col-reverse md:flex-row">
-      <div className="w-full flex items-center p-4 md:p-20 flex-col gap-6 md:w-1/2">
+    <div
+      className="w-full h-auto flex flex-col-reverse md:flex-row"
+      name="home"
+    >
+      <motion.div
+        className="w-full flex items-center p-4 md:p-20 flex-col gap-6 md:w-1/2"
+        initial={{ x: -100 }}
+        whileInView={{ x: 100 }}
+        transition={{ duration: 0.8 }}
+      >
         <div>
           <h1 className=" text-[27px] md:text-[48px] font-sora">
             Hello i'm <span className="font-[800]">Mavin Nara</span>
@@ -59,13 +68,18 @@ function HeroSection() {
             );
           })}
         </div>
-      </div>
-      <div className="w-full flex items-center justify-center md:w-1/2">
+      </motion.div>
+      <motion.div
+        className="w-full flex items-center justify-center md:w-1/2"
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <img
           src="https://res.cloudinary.com/dggryzgok/image/upload/v1704258910/portifolio/etudhajilsnpad3bpwsy.png"
           alt="profile"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

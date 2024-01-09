@@ -17,7 +17,10 @@ const SocialLinks = [
 ];
 function Contact() {
   return (
-    <div className="flex flex-col-reverse p-2 md:px-[80px] md:py-[60px] md:flex-row">
+    <div
+      className="flex flex-col-reverse p-2 md:px-[80px] md:py-[60px] md:flex-row"
+      name="contact"
+    >
       <div className="w-full flex flex-col gap-5 md:w-1/2">
         <form className=" flex flex-col gap-8">
           <input

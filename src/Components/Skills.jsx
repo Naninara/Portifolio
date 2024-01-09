@@ -63,7 +63,10 @@ const SocialLinks = [
 ];
 function Skills() {
   return (
-    <div className="p-0 flex flex-col mt-5 md:py-[60px] md:px-[80px] ">
+    <div
+      className="p-0 flex flex-col mt-5 md:py-[60px] md:px-[80px] "
+      name="skills"
+    >
       <div className=" flex flex-col md:px-[32px] gap-[40px]">
         <h1 className="font-sora text-[48px] text-center">My Skills</h1>
         <div className="flex flex-wrap justify-center items-center w-full gap-[7px] md:gap-20">

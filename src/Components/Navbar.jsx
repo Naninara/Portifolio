@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,18 +14,38 @@ function Navbar() {
         </div>
         <div className="hidden md:block">
           <ul className="flex gap-[32px] font-sora font-[700] text-[15px] ">
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            <Link
+              to="home"
+              smooth
+              offset={-100}
+              className="cursor-pointer hover:scale-110 duration-300"
+            >
               Home
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              to="skills"
+              offset={-100}
+              className="cursor-pointer hover:scale-110 duration-300"
+              smooth
+            >
               Skills
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              to="projects"
+              className="cursor-pointer hover:scale-110 duration-300"
+              smooth
+              offset={-100}
+            >
               Projects
-            </li>
-            <li className="cursor-pointer hover:scale-110 duration-300">
+            </Link>
+            <Link
+              to="contact"
+              className="cursor-pointer hover:scale-110 duration-300"
+              smooth
+              offset={-100}
+            >
               Contact
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="hidden md:block">
