@@ -4,6 +4,17 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import foodier from "../Assets/Foodier.png";
 const projects = [
   {
+    name: "Uber Clone",
+    TechStack: "React Native,Google Api,Tailwind,React native maps",
+    details:
+      "Created a uber clone with functionalities of choosing origin destination,calculating fares,updating maps",
+    Livelink:
+      "https://www.linkedin.com/posts/mavinnara_reactnative-tailwindcss-googleapis-activity-7161363570604044288-K7IW/?utm_source=share&utm_medium=member_desktop",
+    img: "https://res.cloudinary.com/dggryzgok/image/upload/v1704797039/portifolio/fxktwfxy0tx15b9qf2jh",
+    GithubLink: "https://github.com/Naninara/uberclone.git",
+  },
+
+  {
     name: "(Foodier) A Restaurent App",
     TechStack: "ReactJS,NodeJs,ExpressJs,MongoDB,MaterialUI,Redux,MongoDB",
     details:

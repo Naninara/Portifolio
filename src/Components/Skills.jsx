@@ -2,22 +2,33 @@ import React from "react";
 import { FaJava, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import { TbBrandReactNative } from "react-icons/tb";
 
 import {
   SiExpress,
+  SiHtml5,
   SiGit,
+  SiMui,
   SiHibernate,
   SiJavascript,
   SiMongodb,
   SiMysql,
   SiSpringboot,
   SiTailwindcss,
+  SiCss3,
+  SiRedux,
+  SiBootstrap,
 } from "react-icons/si";
 const SocialLinks = [
   {
-    icon: <FaJava size={40} />,
-    name: "Java",
+    icon: <SiHtml5 size={40} />,
+    name: "HTML",
   },
+  {
+    icon: <SiCss3 size={40} />,
+    name: "CSS",
+  },
+
   {
     icon: <SiJavascript size={40} />,
     name: "Java Script",
@@ -29,6 +40,39 @@ const SocialLinks = [
   {
     icon: <FaNodeJs size={40} />,
     name: "NodeJS",
+  },
+  {
+    icon: <SiExpress size={40} />,
+    name: "Express JS",
+  },
+  {
+    icon: <TbBrandReactNative size={40} />,
+    name: "React Native",
+  },
+  {
+    icon: <SiRedux size={40} />,
+    name: "Redux",
+  },
+  {
+    icon: <SiMui size={40} />,
+    name: "Material Ui",
+  },
+
+  {
+    icon: <SiMongodb size={40} />,
+    name: "Mongo DB",
+  },
+  {
+    icon: <SiTailwindcss size={40} />,
+    name: "Tailwind",
+  },
+  {
+    icon: <SiBootstrap size={40} />,
+    name: "Boot Strap",
+  },
+  {
+    icon: <FaJava size={40} />,
+    name: "Java",
   },
   {
     icon: <SiSpringboot size={40} />,
@@ -46,18 +90,7 @@ const SocialLinks = [
     icon: <SiMysql size={40} />,
     name: "My Sql",
   },
-  {
-    icon: <SiExpress size={40} />,
-    name: "Express JS",
-  },
-  {
-    icon: <SiMongodb size={40} />,
-    name: "Mongo DB",
-  },
-  {
-    icon: <SiTailwindcss size={40} />,
-    name: "Tailwind",
-  },
+
   {
     icon: <FaPython size={40} />,
     name: "Python",
