@@ -5,6 +5,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import HeroSection from "./Components/HeroSection";
 import Footer from "./Components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Toaster />
     </div>
   );
 }

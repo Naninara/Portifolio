@@ -1,5 +1,7 @@
+import axios from "axios";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-hot-toast";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 const SocialLinks = [
   {
@@ -16,6 +18,38 @@ const SocialLinks = [
   },
 ];
 function Contact() {
+  const [emailDetails, setemailDetails] = useState({});
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (
+      !emailDetails.email ||
+      !emailDetails.name ||
+      !emailDetails.website ||
+      !emailDetails.message
+    ) {
+      toast.error("Everything Must Be Filled In Form");
+      return;
+    }
+
+    toast.promise(
+      axios.post("https://zany-lime-scorpion-tux.cyclic.app/portifolioEmail", {
+        ...emailDetails,
+      }),
+      {
+        loading: "Sending Email...",
+        success: "Email Sent Succesfully We Will Reach Out To You",
+        error: "OOPS!! Something Went Wrong Try Again",
+      }
+    );
+  }
+
+  function handleChange(e) {
+    setemailDetails((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  }
   return (
     <div
       className="flex flex-col-reverse p-2 md:px-[80px] md:py-[60px] md:flex-row"
@@ -30,21 +64,45 @@ function Contact() {
         <form className="flex flex-col gap-8">
           <input
             placeholder="Your name"
+            name="name"
+            required
+            onChange={(e) => {
+              handleChange(e);
+            }}
             className="w-full h-[56px] flex justify-center px-5 outline-1 border-2 border-black placeholder:font-sora"
           />
           <input
             placeholder="Email"
+            name="email"
+            required
+            type="email"
             className="w-full h-[56px] flex justify-center px-5 outline-1 border-2 border-black placeholder:font-sora"
+            onChange={(e) => {
+              handleChange(e);
+            }}
           />
           <input
-            placeholder="Your Website "
+            placeholder="Your Website | If You Dont Have One Write NA"
+            name="website"
+            required
             className="w-full h-[56px] flex justify-center px-5 outline-1 border-2 border-black placeholder:font-sora"
+            onChange={(e) => {
+              handleChange(e);
+            }}
           />
           <input
             placeholder="Your Message"
+            name="message"
+            required
             className="w-full h-[100px] flex justify-center px-5 outline-1 border-2 border-black placeholder:font-sora"
+            onChange={(e) => {
+              handleChange(e);
+            }}
           />
-          <button className="h-[56px] px-[20px] py-[16px] bg-black flex items-center justify-center text-white font-sora gap-[8px] rounded-md font-[600]">
+          <button
+            className="h-[56px] px-[20px] py-[16px] bg-black flex items-center justify-center text-white font-sora gap-[8px] rounded-md font-[600]"
+            onClick={(e) => handleSubmit(e)}
+          >
             Get In Touch
           </button>
         </form>
