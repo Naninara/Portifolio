@@ -12,12 +12,12 @@ const projects = [
     img: "https://res.cloudinary.com/dggryzgok/image/upload/v1704797039/portifolio/fxktwfxy0tx15b9qf2jh",
     GithubLink: "https://github.com/Naninara/music-player/tree/master",
     whatILearnt:
-      "Server Side Rendering(SSR),NextJS, Using Client Components in NextJS, Integrating Redux in NextJS",
+      "ServerSideRendering(SSR),NextJS, Using Client Components in NextJS, Integrating Redux in NextJS,Progressive Web App(PWA)",
   },
 
   {
     name: "Uber Clone",
-    TechStack: "React Native,Google Api,Tailwind,React native maps",
+    TechStack: "React Native, Google Api, Tailwind, React native maps",
     details:
       "Created a uber clone with functionalities of choosing origin destination,calculating fares,updating maps",
     Livelink:
@@ -25,7 +25,7 @@ const projects = [
     img: "https://res.cloudinary.com/dggryzgok/image/upload/v1704797039/portifolio/fxktwfxy0tx15b9qf2jh",
     GithubLink: "https://github.com/Naninara/uberclone.git",
     whatILearnt:
-      "Learnt About ReactNative,Expo Cli,Andriod Studio,Native Navigation,Integrating Google Api's",
+      "Learnt About ReactNative, Expo Cli, Andriod Studio, Native Navigation, Integrating Google Api's",
   },
 
   {
@@ -62,6 +62,16 @@ const projects = [
     GithubLink: "https://github.com/Naninara/RessoTech.git",
     whatILearnt:
       "Spring Boot,CRUD Operation Using Spring Boot,Integrating Backend With mysql Databases Using JPA,Integrating Spring Security With Existing Application, Role Based Authentication Using Spring Security",
+  },
+  {
+    name: "Personal Blog App",
+    TechStack: "ReactJS,MaterialUi,NodeJS,ExpressJS,MongoDB",
+    img: "https://res.cloudinary.com/dggryzgok/image/upload/v1704797039/portifolio/ujvdtpfwuzh5po38e8iu.png",
+    details:
+      "Created A Personal Blog App with Auto Save Functionality for all CRUD Operations",
+    GithubLink: "https://github.com/Naninara/PersonalBlog.git",
+    whatILearnt:
+      "Throttling and Debouncing in JavaScript, AutoSaving the details my limiting the api calls",
   },
   {
     name: "Car Rental Website",
@@ -126,11 +136,11 @@ function Projects() {
                 transition={{ duration: 0.5 }}
               >
                 <p className="font-[200] text-justify">
-                  <p>Description:</p>
+                  <p className="font-bold">Description:</p>
                   {ele.details}
                 </p>
                 <p className="font-[200] text-justify">
-                  <p>What I Learnt:</p>
+                  <p className="font-bold">What I Learnt:</p>
 
                   {ele?.whatILearnt}
                 </p>
