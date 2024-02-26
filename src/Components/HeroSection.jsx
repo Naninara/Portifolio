@@ -44,10 +44,10 @@ function HeroSection() {
         </div>
         <div className="w-auto text-justify  md:px-0">
           <p>
-            This is Mavin, graduate in Mechanical Engineering from Aditya
-            Engineering College( 2024 ) <b>A SELF TAUGHT PROGRAMMER</b> with
-            strong software programming and developing skills with{" "}
-            <b>MERN Stack </b>and <b>Java Backend</b> with basic Data Structures
+            This is Mavin, An Engineering from Aditya Engineering College( 2024
+            ) With Strong Passion Towards Development and Experienced in
+            developing Native and Web Applications Using
+            <b> MERN Stack </b>and <b>Java Backend</b>
           </p>
         </div>
         <div className="flex gap-4 md:gap-[30px]">

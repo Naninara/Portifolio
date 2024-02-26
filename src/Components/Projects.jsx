@@ -144,7 +144,7 @@ function Projects() {
 
                   {ele?.whatILearnt}
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 font-sora">
                   <a href={ele.GithubLink}>
                     <FaGithub size={30} />
                   </a>
