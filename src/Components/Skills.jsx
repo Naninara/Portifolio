@@ -17,7 +17,7 @@ import {
   SiTailwindcss,
   SiCss3,
   SiRedux,
-  SiBootstrap,
+  SiNextdotjs,
 } from "react-icons/si";
 const SocialLinks = [
   {
@@ -38,12 +38,8 @@ const SocialLinks = [
     name: "ReactJS",
   },
   {
-    icon: <FaNodeJs size={40} />,
-    name: "NodeJS",
-  },
-  {
-    icon: <SiExpress size={40} />,
-    name: "Express JS",
+    icon: <SiNextdotjs size={40} />,
+    name: "Next.JS",
   },
   {
     icon: <TbBrandReactNative size={40} />,
@@ -53,6 +49,15 @@ const SocialLinks = [
     icon: <SiRedux size={40} />,
     name: "Redux",
   },
+  {
+    icon: <FaNodeJs size={40} />,
+    name: "NodeJS",
+  },
+  {
+    icon: <SiExpress size={40} />,
+    name: "Express JS",
+  },
+
   {
     icon: <SiMui size={40} />,
     name: "Material Ui",
@@ -66,10 +71,7 @@ const SocialLinks = [
     icon: <SiTailwindcss size={40} />,
     name: "Tailwind",
   },
-  {
-    icon: <SiBootstrap size={40} />,
-    name: "Boot Strap",
-  },
+
   {
     icon: <FaJava size={40} />,
     name: "Java",

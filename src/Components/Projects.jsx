@@ -4,6 +4,17 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import foodier from "../Assets/Foodier.png";
 const projects = [
   {
+    name: "LYFT (Ride Sharing Application)",
+    TechStack: "NextJS,Redux,Tailwind css,Next-Auth,vercel",
+
+    details:
+      "A Ride Sharing Web Application that used to book rides and post rides on times",
+    Livelink: "https://lyft-beta.vercel.app/",
+    GithubLink: "https://github.com/naninara/lyft",
+    whatILearnt:
+      "Implementing OAuth to Applications,Session management,implementing Routes in Next.JS, Integrating databases with nextJs using singleton pattern",
+  },
+  {
     name: "Music App",
     TechStack: "NextJS,Redux,Spotify Api,Tailwind css,vercel",
     details:
