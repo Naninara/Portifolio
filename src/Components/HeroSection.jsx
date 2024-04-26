@@ -44,7 +44,7 @@ function HeroSection() {
         </div>
         <div className="w-auto text-justify  md:px-0">
           <p>
-            This is Mavin, An Engineering from Aditya Engineering College( 2024
+            This is Mavin, An Engineering graduate from Aditya Engineering College( 2024
             ) With Strong Passion Towards Development and Experienced in
             developing Native and Web Applications Using
             <b> MERN Stack </b>and <b>Java Backend</b>
