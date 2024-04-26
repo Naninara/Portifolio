@@ -5,14 +5,15 @@ import foodier from "../Assets/Foodier.png";
 const projects = [
   {
     name: "LYFT (Ride Sharing Application)",
-    TechStack: "NextJS,Redux,Tailwind css,Next-Auth,vercel",
+    TechStack:
+      "NextJS,Redux,Tailwind css,Next-Auth,Spring Boot,Hibernate,my-sql",
 
     details:
-      "A Ride Sharing Web Application that used to book rides and post rides on times",
+      "A Ride Sharing Web Application that used to book rides and post rides on when they are going on a trip",
     Livelink: "https://lyft-beta.vercel.app/",
     GithubLink: "https://github.com/naninara/lyft",
     whatILearnt:
-      "Implementing OAuth to Applications,Session management,implementing Routes in Next.JS, Integrating databases with nextJs using singleton pattern",
+      "Implementing OAuth to Applications,Session management,implementing Routes in Next.JS,Creating Microservices in Spring Boot, interacting with one microservice with other",
   },
   {
     name: "Music App",
